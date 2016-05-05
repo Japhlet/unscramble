@@ -42,5 +42,7 @@ module.exports = function(string){
     for(let i = 0; i < indexedWords[string].length; ++i){
         results.push(englishWords[indexedWords[string][i]]);
     }
-    return results
+    return results.sort().filter(function(item, pos, ary) {
+        return !pos || item != ary[pos - 1];
+    })
 }
