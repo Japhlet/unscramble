@@ -1,0 +1,14 @@
+{
+  "name": "unscramble",
+  "version": "1.0.0",
+  "description": "Exercise for selection process.",
+  "main": "main.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "matheus.bt@gmail.com",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "expect": "^1.19.0"
+  }
+}
