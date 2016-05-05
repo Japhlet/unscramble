@@ -36,6 +36,9 @@ console.log("Index built in "+(new Date().getTime()-time)+"ms");
 
 module.exports = function(string){
     let results = [];
+    
+    if(typeof string === 'undefined' || typeof indexedWords[string] === 'undefined') return []
+
     for(let i = 0; i < indexedWords[string].length; ++i){
         results.push(englishWords[indexedWords[string][i]]);
     }
